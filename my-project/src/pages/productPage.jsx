@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom"
-function Products() {
+function productPage() {
    
      return (
     <div className="flex flex-wrap justify-between bg-[rgba(0,0,0,0.1)] align-center mt-[70px] ">
@@ -28,7 +28,7 @@ function Products() {
   )
 }
 
-export default Products
+export default productPage;
  
 const datas = [
     {

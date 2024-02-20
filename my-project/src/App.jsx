@@ -7,22 +7,22 @@ import Rigister from './pages/Rigister'
 import Login from './pages/Login'
 import Cart from './pages/Cart'
 import NavBar from './component/NavBar'
-function App() {
 
+function App() {
   return (
    <>
-    <Router>
+   <Router>
       <NavBar />
       <Routes>
        <Route index path='/' element={<Home  /> } />
-        <Route  path='/c' element={<Cart />} />
+       
         <Route path='/r' element={<Rigister />} />
         <Route path='/lo' element={<Login />} />
         <Route path='/p' element={<ProductList/>} />
+        <Route path='/C' element={<Cart />} />
+
       </Routes>
     </Router>
-    
-  
    </>
   
   )

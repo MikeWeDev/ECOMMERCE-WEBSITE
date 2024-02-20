@@ -1,3 +1,53 @@
+   {datas.map((pro)=>{
+                 <div className="detail m-8">
+
+     <div className="product-detail  block  w-[100%] sm:flex">
+     <img className="w-[50%] h-full " src={pro.img} alt="" />
+     </div>
+     <h1 className='name font-semibold mb-1 text-lg'><strong>NAME:</strong>NIKE STRIPE</h1>
+   <p className='id font-semibold mb-1 text-md'><strong>ID:</strong>22334567</p>
+   <div className="h-[20px] w-4 bg-red-500 rounded-full"></div>
+   <p className='size font-semibold mb-1 text-md'><strong>SIZE:</strong>37.8</p>
+   <p></p>
+   </div>
+       })}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  const [cart,setCart]=useState([])
+    const handleClick =(iteam)=>{
+      let isPresent=false;
+      datas.forEach((product)=>{
+         if(iteam.id === product.id)
+            isPresent=true;
+         
+        })
+         if(isPresent){
+         setCart([...cart,iteam])
+        return;
+        }
+      
+  }
+
+
+               {cartAmount > 0 && <>({cartAmount})</>}
+               const cartAmount=cartItems[datas.id]
+
+
+ 
  if(itemId){
         setCartItems(itemId)
        } 

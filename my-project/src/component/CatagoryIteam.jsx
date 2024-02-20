@@ -18,7 +18,7 @@ function CatagoryIteam() {
                 </h1>
                 <button className="border text-center align-center w-[100%] bg-white text-gray-600 font-bold 
                 sm:p-2">
-                 <Link to="/c">Shop Now</Link>
+                 <Link to="/p">Shop Now</Link>
                 </button>
               </div>
 

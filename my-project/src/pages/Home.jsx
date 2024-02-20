@@ -4,6 +4,7 @@ import Catagory from '../component/Catagory'
 import Product from '../component/Product'
 import NewsLetter from '../component/NewsLetter'
 import Fotter from '../component/Fotter' 
+
 function Home() {
   return (
     <>

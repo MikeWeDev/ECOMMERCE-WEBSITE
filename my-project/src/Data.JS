@@ -23,4 +23,4 @@ const data = [
         bg:"f5fafd"
     }
 ]
-export default data
+export default data;

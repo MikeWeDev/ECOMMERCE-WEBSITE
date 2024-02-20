@@ -35,9 +35,9 @@ function Slider() {
    <>
    {data.map((iteam)=>(
         <>
-       <div style={{transform:`translateX(-${currentIndex * 100}vw)`}} 
-       className="flex flex-col  w-[100vw] h-[100vh] align-center transition-all-2  sm:flex-row ">
-         <div className="image-container flex-1 h-[100vh] w-[100vw]">
+       <div key={iteam.id} style={{transform:`translateX(-${currentIndex * 100}vw)`}} 
+       className="flex flex-col  w-[100vw] h-[90vh] align-center transition-all-2  sm:flex-row ">
+         <div className="image-container flex-1 h-[90vh] w-[100vw]">
           <img  src={iteam.img} alt=""
            className="h-[400px] w-[100vw] mt-2"/>   
           </div>
