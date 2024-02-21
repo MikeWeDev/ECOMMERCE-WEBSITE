@@ -1,0 +1,57 @@
+const datas = [
+    {
+        id:1,
+        amount:1,
+        img:"products/photo_2024-01-30_08-23-27.jpg",
+        price:`${34}$`
+    },
+    {
+        id:2,
+        amount:1,
+        price:`${45}$`,
+        img:"products/photo_2024-01-30_08-23-32.jpg"
+    },
+    {
+        id:3,
+        amount:1,
+        price:`${80}$`,
+        img:"products/photo_2024-01-30_08-23-33.jpg"
+    },
+    {
+        id:4,
+        amount:1,
+        price:`${76}$`,
+        img:"products/photo_2024-01-30_08-23-34.jpg"
+    },
+    {
+        id:5,
+        amount:1,
+        price:`${124}$`,
+        img:"products/photo_2024-01-30_08-23-35 (2).jpg"
+    },
+    {
+        id:6,
+        amount:1,
+        price:`${18}$`,
+        img:"products/photo_2024-01-30_08-23-35 (3).jpg"
+    },
+    {
+        id:3,
+        amount:1,
+        price:`${90}$`,
+        img:"products/photo_2024-01-30_08-23-33.jpg"
+    },
+    {
+        id:7,
+        amount:1,
+        price:`${38}$`,
+        img:"products/photo_2024-01-30_08-23-27.jpg"
+    },
+    {
+        id:8,
+        amount:1,
+        price:`${76}$`,
+        img:"products/photo_2024-01-30_08-23-35.jpg"
+    },
+]
+export default datas;

@@ -1,3 +1,49 @@
+ <Routes>
+       
+      
+        <Route path='/p' element={<ProductList/>} />
+        <Route path='/C' element={<Cart />} />
+
+      </Routes>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   let ind=-1;
+  carts.forEach((data,index)=>{
+   if(data.id === pro.id)
+       ind = index;
+  });
+  const tempArr =carts;
+   tempArr[ind].amount += d;
+  if(tempArr[ind].amount === 0)
+    tempArr[ind].amount = 1;
+  setCarts([...tempArr])
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
    {datas.map((pro)=>{
                  <div className="detail m-8">
 
