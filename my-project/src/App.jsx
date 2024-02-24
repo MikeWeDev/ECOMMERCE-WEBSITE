@@ -1,5 +1,5 @@
 import './index.css'
-import { BrowserRouter as Router, Routes ,Route } from "react-router-dom"
+import { HashRouter as Router, Routes ,Route } from "react-router-dom"
 import Products from './AddtoCart/productPage'
 import Rigister from './pages/Rigister'
 import Login from './pages/Login'
