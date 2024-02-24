@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import {Link} from "react-router-dom"
 
 function Slider() {
@@ -20,10 +20,22 @@ function Slider() {
     setCurrentIndex(currentIndex + 1)
   }
   }
+  useEffect(()=>{
+    const interval=setInterval(()=>{
+      prevSlide();
+      nextSlide();
+    },3000);
+    return () =>{
+      clearInterval(interval)
+    }
+  })
+     
+      
+     
   
   return (
     
-    <div className=" sliders flex bg-[#fcf1ed] w-[100vw] h-[120vh] align-center sm:h-[80vh]">
+    <div className=" sliders mt-[120px] mb-[50px] flex bg-[#fcf1ed] w-[100vw] h-[120vh] align-center sm:h-[80vh]">
       <div className="w-[100%] flex   relative h-[120vh] overflow-hidden  sm:h-[100vh] ">
      
      
@@ -36,10 +48,10 @@ function Slider() {
    {data.map((iteam)=>(
         <>
        <div key={iteam.id} style={{transform:`translateX(-${currentIndex * 100}vw)`}} 
-       className="flex flex-col  w-[100vw] h-[90vh] align-center transition-all-2  sm:flex-row ">
+       className="flex flex-col  w-[100vw] h-[90vh] align-center transition-all-2  sm:flex-row  ">
          <div className="image-container flex-1 h-[90vh] w-[100vw]">
           <img  src={iteam.img} alt=""
-           className="h-[400px] w-[100vw] mt-2"/>   
+           className="h-[500px] w-[100vw] mt-2"/>   
           </div>
           <div className="info-container  flex-1 p-[28px] mt-10">
             <h1 className="text-[50px]">
@@ -72,7 +84,7 @@ export default Slider
 const data = [
   {
       id:1,
-      img:"images/black-friday-sale-decoration-background-with-shopping-trolley-copy-space_257995-187.webp",
+      img:"images/photo_2024-02-23_14-27-41.jpg",
       title:'SUMMER SALE',
       desc:"DONT CONPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVAL",
       bg:"f5fafd"
@@ -86,7 +98,7 @@ const data = [
   },
   {
       id:3,
-      img:"images/1442800616550389959.jpg",
+      img:"images/photo_2024-02-23_14-27-45.jpg",
       title:'WINTER',
       desc:"DONT CONPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVAL",
       bg:"f5fafd"

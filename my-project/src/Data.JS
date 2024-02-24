@@ -1,7 +1,7 @@
 const data = [
     {
         id:1,
-        img:"images/black-friday-sale-decoration-background-with-shopping-trolley-copy-space_257995-187.webp",
+        img:"",
         title:'SUMMER SALE',
         desc:"DONT CONPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVAL",
         bg:"f5fafd"

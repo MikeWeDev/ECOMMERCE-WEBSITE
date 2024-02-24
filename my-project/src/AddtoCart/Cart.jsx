@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-function Cart({Cart,setCart,handleChange}) {
+function Cart({Cart,setCart,handleChange,x}) {
   const [price,setPrice]=useState(0)
  
   const handlePrice=()=>{
@@ -15,17 +15,14 @@ function Cart({Cart,setCart,handleChange}) {
     const arr=Cart.filter((iteam)=>iteam.id !== id)
     setCart(arr);
   }
-  useEffect(()=>{
-    handlePrice();
-   })
  
   return (
    <div className="">
      {Cart.map((pro)=>(
-         <div className="detail m-8  md:flex md:justify-around" key={Math.random(1)} >
+         <div className="detail max-h-[700px] w-[900px] mt-[90px]  md:flex md:justify-around" key={Math.random(1)} >
 
 <div className="product-detail  block  w-[40%] sm:flex">
-<img className="w-[100%] h-full " src={pro.img} alt="" />
+<img className="w-[100%] h-[400px] " src={pro.img} alt="" />
 </div>
 <div className="mt-5 md:mt-24">
 <h1 className='name font-semibold mb-1 text-lg'><strong>NAME:</strong>NIKE STRIPE</h1>
@@ -56,7 +53,7 @@ function Cart({Cart,setCart,handleChange}) {
 
 
        ))}
-       <div className=" summery p-3 font-semibold rounded-md border-[0.3px] border-gray-600 mb-20  w-[50%] md:w-[25%]">
+       <div className=" summery p-3 font-semibold mt-[10vh] rounded-md border-[0.3px] border-gray-600 mb-20  w-[50%] md:w-[25%]">
         
         <h1 className='font-bold text-xl '>ORDER SUMMARY</h1>
        <div className="summery-items my-6 flex justify-between">
@@ -65,8 +62,8 @@ function Cart({Cart,setCart,handleChange}) {
        </div>
       
        <div className="summery-items my-6 flex justify-between">
-         <span>ESTIMATE SHIPTING</span>
-         <span>$4.70</span>
+         <span>NO PRODUCT ORDERS</span>
+         <span>{x}<span className="ml-2">ITEMS</span></span>
        </div>
        <div className="summery-items my-6 flex justify-between">
          <span>SHIPING DISCOUNT </span>
@@ -75,10 +72,10 @@ function Cart({Cart,setCart,handleChange}) {
 
        <div className="summery-items text-xl my-6 flex justify-between">
          <span> TOTALL </span>
-         <span>{(price)-2.30}$ </span>
+         <span>{((price-2.30))}$ </span>
        </div>
 
-       <button className='w-full p-3 text-white bg-black'>CHECKOUT NOW</button>
+       <button  className='w-full p-3 text-white bg-black '>CHECKOUT NOW</button>
 
          </div>
 
