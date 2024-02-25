@@ -15,6 +15,15 @@ function Cart({Cart,setCart,handleChange,x}) {
     const arr=Cart.filter((iteam)=>iteam.id !== id)
     setCart(arr);
   }
+  const handleCheck=()=>{
+    setCart([])
+    setTimeout(()=>{
+      alert("SUCCESFULLY CHECKOUT")
+    })
+  };
+  useEffect(()=>{
+    handlePrice();
+  })
  
   return (
    <div className="">
@@ -75,7 +84,7 @@ function Cart({Cart,setCart,handleChange,x}) {
          <span>{((price-2.30))}$ </span>
        </div>
 
-       <button  className='w-full p-3 text-white bg-black '>CHECKOUT NOW</button>
+       <button onClick={()=>handleCheck()}  className='w-full p-3 text-white bg-black '>CHECKOUT NOW</button>
 
          </div>
 

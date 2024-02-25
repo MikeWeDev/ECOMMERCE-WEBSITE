@@ -84,21 +84,21 @@ export default Slider
 const data = [
   {
       id:1,
-      img:"images/photo_2024-02-23_14-27-41.jpg",
+      img:"images/R (1).png",
       title:'SUMMER SALE',
       desc:"DONT CONPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVAL",
       bg:"f5fafd"
   },
   {
       id:2,
-      img:"images/R (1).png",
+      img:"images/R.png",
       title:'AUTOMINE COLLECTION',
       desc:"DONT CONPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVAL",
       bg:"fcf1ed"
   },
   {
       id:3,
-      img:"images/photo_2024-02-23_14-27-45.jpg",
+      img:"images/1442800616550389959.jpg",
       title:'WINTER',
       desc:"DONT CONPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVAL",
       bg:"f5fafd"
