@@ -16,11 +16,11 @@ function Cart({Cart,setCart,handleChange,x}) {
     setCart(arr);
   }
   const handleCheck=()=>{
-    setCart([])
-    setTimeout(()=>{
-      alert("SUCCESFULLY CHECKOUT")
-    })
-  };
+    setCart([]);
+   alert("SUCCESFULLY CHECKOUT")
+  }
+     
+  
   useEffect(()=>{
     handlePrice();
   })

@@ -3,7 +3,8 @@ const datas = [
         id:1,
         amount:1,
         img:"UpdatedImg/f6947e640421d97017f27f6e9f08db61.jpg",
-        price:`${34}$`
+        price:`${34}$`,
+        color:"black"
     },
     {
         id:2,

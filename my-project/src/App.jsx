@@ -12,7 +12,7 @@ function App() {
   const [carts,setCarts]=useState([]);
   const [show,setShow]=useState(true);
   const [warining,setWarning]=useState(false);
- 
+ const [search,setSearch]=useState('')
   const handleClick =(iteam)=>{
   let isPresen=false;
   carts.forEach((product)=>{
@@ -44,7 +44,7 @@ const handleChange= (pro,d)=>{
  const x=carts.length;
   return (
    <Router> 
-        <NavBar size={x} />
+        <NavBar size={x}  />
      <Routes>
        
        <Route index path='/' element={ <Product  click={handleClick} key={Math.random(1)}  Cart={x} />} />
