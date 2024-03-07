@@ -1,0 +1,59 @@
+21. Name: "zenEco"
+    ID: 21
+    fName: "z"
+
+22. Name: "aquaGlide"
+    ID: 22
+    fName: "a"
+
+23. Name: "urbanSpark"
+    ID: 23
+    fName: "u"
+
+24. Name: "novaPure"
+    ID: 24
+    fName: "n"
+
+25. Name: "ecoFlex"
+    ID: 25
+    fName: "e"
+
+26. Name: "swiftThrive"
+    ID: 26
+    fName: "s"
+
+27. Name: "vitaGlow"
+    ID: 27
+    fName: "v"
+
+28. Name: "glamMist"
+    ID: 28
+    fName: "g"
+
+29. Name: "trueEdge"
+    ID: 29
+    fName: "t"
+
+30. Name: "solarVital"
+    ID: 30
+    fName: "s"
+
+31. Name: "blissGlow"
+    ID: 31
+    fName: "b"
+
+32. Name: "maxFlex"
+    ID: 32
+    fName: "m"
+
+33. Name: "novaGlide"
+    ID: 33
+    fName: "n"
+
+34. Name: "pureVital"
+    ID: 34
+    fName: "p"
+
+35. Name: "techPulse"
+    ID: 35
+    fName: "t"

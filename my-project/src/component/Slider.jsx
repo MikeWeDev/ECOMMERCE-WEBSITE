@@ -39,11 +39,7 @@ function Slider() {
       <div className="w-[100%] flex   relative h-[120vh] overflow-hidden  sm:h-[100vh] ">
      
      
-       <div onClick={prevSlide}  className="w-[50px]  h-[50px]  rounded-md
-      flex justify-center  cursor-pointer align-center absolute top-[20%] left-[-10] z-50 sm:top-[30%]">
-  <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-    <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"/></svg>
-   </div>
+    
    <>
    {data.map((iteam)=>(
         <>
@@ -69,11 +65,6 @@ function Slider() {
       ))};
    </>
   
-   
-   <div onClick={nextSlide} className="w-[50px] h-[50px] rounded-md
-      flex justify-center  cursor-pointer align-center absolute top-[20%] right-2 sm:top-[30%]">
-        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
-   </div>
     </div>
     </div>
   )
@@ -84,21 +75,21 @@ export default Slider
 const data = [
   {
       id:1,
-      img:"images/photo_2024-02-23_14-27-41.jpg",
+      img:"images/R (1).png",
       title:'SUMMER SALE',
       desc:"DONT CONPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVAL",
       bg:"f5fafd"
   },
   {
       id:2,
-      img:"images/R (1).png",
+      img:"images/R.png",
       title:'AUTOMINE COLLECTION',
       desc:"DONT CONPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVAL",
       bg:"fcf1ed"
   },
   {
       id:3,
-      img:"images/photo_2024-02-23_14-27-45.jpg",
+      img:"images/1442800616550389959.jpg",
       title:'WINTER',
       desc:"DONT CONPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVAL",
       bg:"f5fafd"

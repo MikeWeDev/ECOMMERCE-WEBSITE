@@ -3,9 +3,9 @@ function CatagoryIteam() {
 
     return (
        <div className="flex flex-wrap justify-around align-center gap-4">
-  {catagories.map((iteam)=>(
+  {catagories.map((iteam,index)=>(
           <>
-          <div className="box-container w-[40%] relative  border  border-black sm:w-[30%]">
+          <div key={index} className="box-container w-[40%] relative  border  border-black sm:w-[30%]">
          <div className="image-container opacity-100 w-[100%]  h-[100%]  flex justify-center align-center">
               <img  src={iteam.img}
                className="w-[100vw] h-[50vh]  object-cover sm:h-[60vh]"/>   

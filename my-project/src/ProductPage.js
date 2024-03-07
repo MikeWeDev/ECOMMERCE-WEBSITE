@@ -1,4 +1,4 @@
-const datas = [
+const newDatas = [
     {
         Name: "luxeGlow" ,
         fName: "l",
@@ -217,10 +217,203 @@ const datas = [
         color:"white",
         time:"new",
     },
+
+    {
+        Name: "zenEco",
+        id: 21,
+        fName: "z",
+        amount:1,
+        price:`${52}$`,
+        img:"additionall/6d50c202d34338ae3c4d0e5c3c74a859.jpg",
+        type:"tshirt",
+        color:"black",
+        time:"old",
+    },
+    {
+        Name: "aquaGlide",
+        id: 22,
+       fName: "a",
+        amount:1,
+        price:`${96}$`,
+        img:"additionall/8c374fd1c49c49d5815397d17fda20b6.jpg",
+        color:"others",
+        type:"tshirt",
+        time:"new",
+    },
+    {
+        Name: "urbanSpark",
+        id: 23,
+        fName: "u",
+        amount:1,
+        price:`${32}$`,
+        img:"additionall/9b2cd95efd227087d27809ecf11d2c11.jpg",
+        type:"tshirt",
+        color:"black",
+        time:"old",
+    },
+    {
+        Name: "novaPure",
+        id: 24,
+        fName: "n",
+        amount:1,
+        price:`${26}$`,
+        img:"additionall/54e0eab5f049c149a5e95420c5bb2ccd.jpg",
+        type:"others",
+        color:"black",
+        time:"new",
+    },
+
+
+
+
+
+
+
+    {
+         Name: "ecoFlex",
+         id: 25,
+        fName: "e",
+        amount:1,
+        price:`${32}$`,
+        img:"additionall/6670ebfdcbd867210ec7bbb399741def.jpg",
+        type:"shouse",
+        color:"white",
+        time:"old",
+    },
+    {
+        Name: "vitaGlow",
+        id: 26,
+        fName: "v",
+        amount:1,
+        price:`${132}$`,
+        img:"additionall/adeb23e4b79f3d6dfb83f49d68290978.jpg",
+        type:"hoddies",
+        color:"browen",
+        time:"old",
+    },
+    {
+        Name: "swiftThrive",
+        id: 27,
+        fName: "s",
+        amount:1,
+        price:`${16}$`,
+        img:"additionall/754843e9da95f48f51ba8949641d3387.jpg",
+        color:"black",
+        type:"hoddies",
+        time:"new",
+    },
+   
+    {
+        Name: "glamMist",
+        id: 28,
+       fName: "g",
+        amount:1,
+        price:`${66}$`,
+        img:"additionall/b45d6e328d73dd48866db3727f3ce5be.jpg",
+        type:"hoddies",
+        color:"browen",
+        time:"new",
+    },
+
+    {
+        Name: "trueEdge",
+        id: 29,
+        fName: "t",
+        amount:1,
+        price:`${32}$`,
+        img:"additionall/bea31296162a1c6d82f7cfa90a14d60b.jpg",
+        type:"others",
+        color:"others",
+        time:"old",
+    },
+    {
+        Name: "solarVital",
+        id: 30,
+        fName: "s",
+        amount:1,
+        price:`${26}$`,
+        img:"additionall/bffafc4cbcb7edb2d707b1f1dd6d0742.jpg",
+        color:"black",
+        type:"hoddies",
+        time:"new",
+    },
+    {
+        Name: "blissGlow",
+        id: 31,
+        fName: "b",
+        amount:1,
+        price:`${32}$`,
+        img:"additionall/c561e7f2c40fccb8c8fc0f5349a1ff95.jpg",
+        type:"others",
+        color:"black",
+        time:"old",
+    },
+    {
+        Name: "maxFlex",
+        id: 32,
+        fName: "m",
+        amount:1,
+        price:`${26}$`,
+        img:"additionall/cad3887f4b26ea3319cf1e5096fe20c2.jpg",
+        type:"shouse",
+        color:"others",
+        time:"new",
+    },
+
+    {
+        Name: "novaGlide",
+        id: 33,
+        fName: "n",
+        amount:1,
+        price:`${82}$`,
+        img:"additionall/cc578109560c9a568cd9305f8259a21a.jpg",
+        type:"others",
+        color:"white",
+        time:"old",
+    },
+    {
+        Name: "pureVital",
+        id: 34,
+        fName: "p",
+        amount:1,
+        price:`${226}$`,
+        img:"additionall/cf9663f6412223c8de340690e58bd8fb.jpg",
+        color:"black",
+        type:"tshirt",
+        time:"new",
+    },
+    {
+        Name: "techPulse",
+        id: 35,
+        fName: "t",
+        amount:1,
+        price:`${321}$`,
+        img:"additionall/d1240d84aa49a401b8aa02924fa41039.jpg",
+        type:"shouse",
+        color:"white",
+        time:"old",
+    },
+    {
+        Name: "techPulse" ,
+        fName: "t",
+        id:36,
+        amount:1,
+        price:`${96}$`,
+        img:"additionall/e523225395e5c1016932249afc8e0a9c.jpg",
+        type:"shouse",
+        color:"white",
+        time:"new",
+    },
+
+
+
+
+
+   
     
 
 ]
-export default datas;
+export default newDatas;
 
 
 
