@@ -1,6 +1,6 @@
 function Fotter() {
   return (
-   <div className="container  bg-[#e6edeb] flex items-center justify-between flex-wrap gap-4  ">
+   <div className="  bg-[#e6edeb] w-[100vw] flex items-center justify-between flex-wrap gap-4  ">
    
    
     <div className="left w-[40%]  sm:w-[30%]">

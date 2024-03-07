@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-
 function Cart({Cart,setCart,handleChange,x}) {
   const [price,setPrice]=useState(0)
  
@@ -17,7 +16,7 @@ function Cart({Cart,setCart,handleChange,x}) {
   }
   const handleCheck=()=>{
     setCart([]);
-   alert("SUCCESFULLY CHECKOUT")
+   alert(`SUCCESFULLY CHECKOUT $${price} value product`)
   }
      
   
@@ -34,10 +33,10 @@ function Cart({Cart,setCart,handleChange,x}) {
 <img className="w-[100%] h-[400px] " src={pro.img} alt="" />
 </div>
 <div className="mt-5 md:mt-24">
-<h1 className='name font-semibold mb-1 text-lg'><strong>NAME:</strong>NIKE STRIPE</h1>
-<p className='id font-semibold mb-1 text-md'><strong>ID:</strong>22334567</p>
-<div className="h-[20px] w-4 bg-red-500 rounded-full"></div>
-<p className='size font-semibold mb-1 text-md'><strong>SIZE:</strong>37.8</p>
+<h1 className='name font-semibold mb-1 text-lg'><strong>NAME:</strong>{pro.Name}</h1>
+<p className='id font-semibold mb-1 text-md'><strong>ID:</strong>{pro.id}</p>
+<div className="h-[20px] w-4  rounded-full" style={{backgroundColor:`${pro.color}`}}></div>
+<p className='size font-semibold mb-1 text-md'><strong>TYPE:</strong>{pro.type}</p>
 </div>
 
 <div className="mt-5 md:mt-[110px]">
@@ -48,7 +47,7 @@ function Cart({Cart,setCart,handleChange,x}) {
   <span onClick={()=>handleChange(pro, 1)}  className="border-[2px] border-black h-14 w-10 text-5xl  cursor-pointer"
   >+
   </span>
-  <span className="border-[2px] pl-1 border-black h-14 w-10 text-5xl  cursor-pointer">
+  <span className="underline  h-14 w-10 text-5xl  cursor-pointer">
     {pro.amount}
   </span>
   <span  onClick={()=>handleChange(pro, - 1 )} className="border-[2px] border-black h-14 w-10 text-5xl pl-2  cursor-pointer">
