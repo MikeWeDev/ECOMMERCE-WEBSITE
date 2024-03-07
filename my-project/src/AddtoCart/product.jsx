@@ -11,9 +11,9 @@ function Product(props) {
          <Slider />
           <Catagory />
   <div className="flex flex-wrap justify-between bg-[rgba(0,0,0,0.1)] align-center mt-[70px] ">
-    {datas.map((iteam,index)=>(
+    {datas.map((iteam)=>(
             <>
-            <div key={index}
+            <div key={iteam.id}
              className="box-container hover:scale-110 hover:bg-[#ff5e5e] hover:shadow-2xl  hover:shadow-black mt-[22px]  w-[40%]  relative m-5  border-[rgba(0,0,0,0.2)] border-[2px]
             sm:w-[20%] gap-2 ">
           
