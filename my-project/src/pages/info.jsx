@@ -21,7 +21,7 @@ function Info({info,carts,setInfo,handleChange}){
       <div className="wrapper flex jsutify-between  flex-col ">
        {info.map((iteam,index)=>(
         <>
-        <div  key={index} className="cont flex gap-x-10 ">
+        <div  key={index} className="cont  flex-col md:flex md:flex-row border border-black pb-10 ">
         <div className="img-con flex-2  ">
     <img className='h-[350px]] w-[350px]'  src={iteam.img} alt="" />
 </div>
@@ -35,9 +35,9 @@ Velit rem accusamus dolore eaque fuga sunt illum non tenetur aperiam reprehender
     {parseFloat(iteam.price) * iteam.amount}$
     </p>
   
-    <div className="flex gap-5 ">
+    <div className="flex flex-col  gap-5 ">
    
-    <div className="filter-con flex justify-start">
+    <div className="filter-con  flex justify-start">
 <select className='mr-40 p-2 text[20px] border border-black border-3'>
     <option value="">size</option>
     <option value="">xs</option>
@@ -47,7 +47,7 @@ Velit rem accusamus dolore eaque fuga sunt illum non tenetur aperiam reprehender
     <option value="">xl</option>
   </select>
     </div>
-  
+  <div className="flex justify-around w-[70%]">
   <span onClick={()=>handleChange(iteam, 1)}  className="border-[2px] border-black h-14 w-10 text-5xl  cursor-pointer"
   >+
   </span>
@@ -60,6 +60,8 @@ Velit rem accusamus dolore eaque fuga sunt illum non tenetur aperiam reprehender
   <span onClick={()=>handleRemove(iteam.id)} className="font-bold text-xl pt-2 underline text-blue-800  cursor-pointer">
     Remove</span>
  </div>
+  </div>
+ 
 <div className="add-con flex mt-14">
 
 <button  onClick={()=>carts(iteam)}>

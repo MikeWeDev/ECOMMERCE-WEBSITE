@@ -30,7 +30,7 @@ function Products(props) {
         type="text" 
        value={product}
        onChange={(e)=>setProduct(e.target.value)}
-        className="w-15 text-black border "/>  
+        className="w-15 text-black border ml-5 "/>  
       </form>
      
       
@@ -73,6 +73,7 @@ function Products(props) {
 
    <div className="">
          <div className="fiter-container flex justify-between items-center mt-[100px]">
+     
         <div className="filter1 mx-10 font-semibold text-[15px] ">
              <h1 className='block text-5 sm:flex'> Filter product</h1>  
           <select className='mx-2 my-3 p-1 text[20px] border border-black border-3'
@@ -98,11 +99,28 @@ function Products(props) {
             <option value="shouse">Shoes</option>
             <option value="others">Others</option>
           </select>
+         
+      
+      <form action=""  className="block md:hidden ">
+      <h1 className=' text-5 '>  Search product
+</h1>  
+      <input
+        type="text" 
+       value={product}
+       placeholder="Search"
+       onChange={(e)=>setProduct(e.target.value)}
+        className="w-15 text-black  border-[2px] border-black "/>  
+      </form>
+     
+      
+  
+        
         </div>
-        <div className="filter2 mx-10  font-semibold text-[14px]">
+        
+        <div className="filter2 mx-1  font-semibold text-[14px] hidden md:block">
         <h1 className='block text-5 sm:flex'>  Sort product
 </h1>  
-         <select className='  p-1 text[15px] border border-black border-3 '
+         <select className='p-1 text[15px] border  border-black border-3 '
          value={time} onChange={(e)=>setTime(e.target.value)}>
             <option value="">
               Newest
@@ -112,6 +130,7 @@ function Products(props) {
           </select>
         
         </div>
+       
       </div>
         
   <div className="flex flex-wrap justify-between bg-[rgba(0,0,0,0.1)] align-center mt-[70px]  ">
@@ -125,8 +144,9 @@ function Products(props) {
   return  product === "" ? iteam : iteam.fName.toLowerCase() === product.toLocaleLowerCase()
     }).map((iteam,index)=>(
             <>
-            <div key={index} className="box-container hover:scale-110 hover:shadow-2xl  hover:shadow-black hover:bg-[#ff5e5e] mt-[22px]  w-[40%]  relative m-5  border-[rgba(0,0,0,0.2)] border-[2px]
-            sm:w-[20%] gap-2 ">
+            <div key={index} className="box-container hover:scale-110 hover:shadow-2xl  hover:shadow-black 
+            hover:bg-[#ff5e5e] mt-[22px]   relative   border-[rgba(0,0,0,0.2)] border-[2px]
+             gap-2    md:w-[22%] md:gap-6  w-[40%] ">
           
            <div    className="image-container  w-[100%]  h-[100%]  flex justify-center align-center">
                 <img  src={iteam.img}
