@@ -35,8 +35,8 @@ function Slider() {
   
   return (
     
-    <div className=" sliders mt-[120px] mb-[50px] flex bg-[#fcf1ed] w-[100vw] h-[120vh] align-center sm:h-[80vh]">
-      <div className="w-[100%] flex   relative h-[120vh] overflow-hidden  sm:h-[100vh] ">
+    <div className=" sliders mt-[120px] mb-[50px] flex bg-[#fcf1ed] w-[100vw] align-center h-[200vh] md:h-[100vh]">
+      <div className="w-[100%] flex  relative [100vh] ">
      
      
     

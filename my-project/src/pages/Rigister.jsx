@@ -19,7 +19,7 @@ function Rigister() {
     <div className="w-full h-[100vh] border justify-center flex items-center bg-cover 
     bg-[url('C:\Users\Lia\Desktop\REACT-PROJECTS\ECOMMERCE\my-project\public\images\82833577_587038971846970_2179314450611749326_n.jpg')]
      opacity-[0.8]">
-        <div className="wrapper h-[70%] w-[80%] flex flex-col justify-center items-center bg-white opacity-80">
+        <div className="wrapper h-[80%] mt-10 w-[80%] flex flex-col justify-center items-center bg-white opacity-80">
             <h1 className="font-bold  text-xl w-1/2 p-2 sm:text-3xl">Create Account</h1>
             <form  onSubmit={handleSubmit}   className="flex w-full flex-col gap-3" >
                 <input
